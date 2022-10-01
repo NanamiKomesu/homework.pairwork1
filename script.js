@@ -92,6 +92,9 @@ $(function(){
     }
   });
 
+// トップコンテンツ
+// $(".topcontent img").animate()
+
     // スライド
     $('.slider-1').slick({
         infinite: true,
