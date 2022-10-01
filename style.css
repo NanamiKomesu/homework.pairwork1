@@ -3,64 +3,71 @@
 /* CSS Document */
 
 .hamburger-button {
-  display: flex; /* media query時にはflexでもどして */
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  z-index: 1002;
-  background-color: #fff;
-  border: none;
-  cursor: pointer;
-  width: 40px;
-  height: 40px;
-  outline: none;
-}
-.hamburger-button svg {
-  height: 25px; /* autoではなく同じ数字で */
-  width: 25px; /* autoではなく同じ数字で */
-}
-.hamburger-button path {
-  fill: #000;
-}
-.hamburger-nav {
-  position: fixed;
-  width: 100%;
-  background-color: #fff;
-  z-index: 1001;
-  padding: 20px;
-  display: none;
-}
-#hamburger-overlay {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(0,0,0,.5);
-  pointer-events: none;
-  opacity: 0;
-  z-index: 1000;
+    display: flex;
+    /* media query時にはflexでもどして */
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1002;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    outline: none;
 }
 
+.hamburger-button svg {
+    height: 25px;
+    /* autoではなく同じ数字で */
+    width: 25px;
+    /* autoではなく同じ数字で */
+}
+
+.hamburger-button path {
+    fill: #000;
+}
+
+.hamburger-nav {
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1001;
+    padding: 20px;
+    display: none;
+}
+
+#hamburger-overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .5);
+    pointer-events: none;
+    opacity: 0;
+    z-index: 1000;
+}
+
+.hamburger-button{
+display: none;
+}
 /* ハンバーガーメニューのレスポンシブ */
 /* PC時には非表示
-.hamburger-button {
-    display: none;
-  }
-
+  
   /* ナビゲーション */
-  * {
-    box-sizing: border-box;
- }
- body {
+
+body {
     margin: 0;
     padding: 0;
     font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif;
     background-color: #e6e6e6;
- }
- header {
+}
+
+header {
+    position: relative;
     padding: 30px 4% 10px;
     position: fixed;
     top: 0;
@@ -68,40 +75,69 @@
     background-color: #fff;
     display: flex;
     align-items: center;
- }
- h1 {
-    margin: 0; padding: 0;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
     font-size: 20px;
- }
- a {	
+}
+
+a {
     text-decoration: none;
     color: #4b4b4b;
- }
- nav {
-    margin: 0 0 0 auto;
- }
- ul {
+}
+
+nav {
+    text-align: center;
+}
+
+ul {
     list-style: none;
     margin: 0;
     display: flex;
- }
- li {
+}
+
+li {
     margin: 0 0 0 15px;
     font-size: 14px;
- }
-
-
-  /* スライド */
-.slider-1 img{
-width: 100%;
-height: 400px;
 }
 
-main{
-width: 80%;
-margin:  20% auto;
+/* ナビゲーションボタン */
+.pc-nav {
+    display: flex;
+    justify-content: space-between;
 }
 
-body{
-background-color: black;
+.nav-img {
+    display: flex;
+    align-content: space-between;
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    top: 50%;
+    right: 30%;
+}
+
+.nav-img img {
+    margin-left: 100%;
+}
+
+
+
+
+
+/* スライド */
+.slider-1 img {
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    width: 90%;
+    margin: 10%;
+}
+
+body {
+    background-color: black;
 }
