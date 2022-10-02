@@ -22,14 +22,11 @@ body {
   }
 
   header {
-      padding: 30px 4% 10px;
-      /* position: fixed;
-    top: 0; */
+      padding: 30px;
       height: 50px;
       width: 100%;
       background-color: #fff;
       display: flex;
-      /* align-items: center; */
   }
 
   /* ナビゲーション */
@@ -151,7 +148,8 @@ body {
   /* キーヴィジュアル */
   .kv {
     width: 100%;
-    height: 1000px;
+    height: 100%;
+    margin-bottom:50% ;
       position: relative;
   }
 
@@ -169,120 +167,90 @@ body {
 
   .kv-hover3 {
       position: absolute;
-      top: 77%;
+      top: 80%;
       left: 17%;
   }
 
-
-
-
+  .kv-hover4{
+width: 400px;
+height: 500px;
+position: absolute;
+top: 120%;
+left: 50%;
+}
 
   /* メイン */
   main {
-      width: 90%;
+      width: 100%;
+      height: 100%;
       margin: 10%;
       position: relative;
   }
 
-
-  /* topcontent */
-  .topcontent {
+  /* トップコンテンツ */
+  .content{
+width: 600px;
+height: 600px;
+}
+  .content1 img{
+    width: 500px;
+    height: 500px;
       position: absolute;
-      top: 0;
-      text-align: right;
-      position: relative;
+      top: 10%;
+      left: 8%;
   }
+.toptext1 h1{
+color: white;
+height: auto;
+width: auto;
+position: absolute;
+font-size: 40px;
+top: 20%;
+}
 
-  .topcontent img {
-      width: 500px;
-      height: 500px;
+  .content2 img {
+    width: 500px;
+    height: 500px;
       position: absolute;
-      /* top: 70%; */
+      top: 70%;
       right: 30%;
-      margin-top: 10%;
-  }
-
-  .toptext {
-      height: 700px;
-      width: 400px;
-      color: white;
-      text-align: left;
-      position: relative;
-      padding-left: 15%;
-  }
-
-  .toptext h1 {
-      font-size: 40px;
-      position: absolute;
-      top: 40%;
-  }
-
-  .toptext p {
-      font-size: 20px;
-      position: absolute;
-      bottom: 5%;
-  }
-
-  /* トップコンテンツ２ */
-  .topcontent2 {
-      margin-top: 20%;
-      position: absolute;
-      top: 0;
-      /* position: relative; */
-
-  }
-
-  .topcontent2 img {
-      text-align: left;
-      width: 500px;
-      height: 500px;
-      position: absolute;
-      top: 0;
-      left: 20%;
-  }
-
-  .toptext2 {
-      height: 700px;
-      width: 100%;
-      color: white;
-      position: relative;
-  }
-
-  .text2 {
-      width: 100%;
-      height: 700px;
-      position: absolute;
-      top: 40%;
-      right: 10%;
-  }
-
-  .toptext2 h1 {
-      font-size: 40px;
-      /* position: absolute;
-top: 40%; */
   }
 
   .toptext2 p {
+    color: #fff;
       font-size: 20px;
       position: absolute;
-      bottom: 15%;
-      right: 0%;
+      bottom: 5%;
+      right: 10%;
   }
 
+  
+ 
 
 
-  /* スライド */
+  /* スライド */ 
+ .slide-wrap{
+    height: 80%;
+    width: 100%;
+    margin:10% 5%;
+position: relative;
+}
+
   .slider-1 {
       width: 80%;
       height: 80%;
-      margin-top: 30%;
+      /* position: absolute;
+      top: 0; */
+      
   }
 
-  .slider-1 img {
-      /* margin: 40% 2%; */
-      width: 80%;
+ .slider-1 img {
+    height: 500px;
+    width: auto;
+       margin: 40% 2%;
+       width: 80%;
       height: 80%;
-  }
+  } 
 
   /* フッター */
   .footer-wrrapper {
@@ -290,8 +258,12 @@ top: 40%; */
       height: 500px;
       text-align: center;
       border-top: 1px solid white;
-      margin-top: 10%;
+      margin-top: 20%;
       display: flex;
+      display: grid;
+      margin: 0;
+      padding: 0 5%;
+      grid-template-columns: 1fr 1fr 1fr;
   }
 
   .footer {
@@ -301,13 +273,6 @@ top: 40%; */
       color: white;
       font-size: 20px;
       text-align: left;
-  }
-
-  .footer-wrrapper {
-      display: grid;
-      margin: 0;
-      padding: 0 5%;
-      grid-template-columns: 1fr 1fr 1fr;
   }
 
   .footer.social-list li {
