@@ -73,14 +73,13 @@ particlesJS("particles-js", {
   });
 
 
-    // ヘッダーナビ
+    // ヘッダーナビゲーション
     $(".navhead").on("click", function () {
-        $(this).next(".nav-list").slideToggle();
+        $(this).next(".nv").slideToggle(1000);
         $(this).toggleClass("on");
     })
 
     // ハンバーガーメニュー
-
     $(function () {
 
         /* オプション設定 */
