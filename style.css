@@ -1,159 +1,167 @@
 /* 背景アニメーション */
 html,
 body {
-  height: 100%; /*高さを100%にして描画エリアをとる*/
+    height: 100%;
+    /*高さを100%にして描画エリアをとる*/
 }
 
 #particles-js {
-  position: fixed; /*描画固定*/
-  z-index: -1; /*描画を一番下に*/
-  width: 100%;
-  height: 100%;
-  background-color: #000; /*背景色*/
+    position: fixed;
+    /*描画固定*/
+    z-index: -1;
+    /*描画を一番下に*/
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    /*背景色*/
 }
+
 /* 背景アニメーションここまで */
-  
-  body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Yu Mincho Light', 'YuMincho', 'Yu Mincho', '游明朝体', sans-serif;
-  /* text-align: center; */
-    }
 
-  header {
-      padding: 30px;
-      height: 50px;
-      width: 100%;
-      display: flex;
-  }
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Yu Mincho Light', 'YuMincho', 'Yu Mincho', '游明朝体', sans-serif;
+    /* text-align: center; */
+}
 
-  /* ナビゲーション */
-  .navigation {
-      display: flex;
-      position: relative;
-      width: 100%;
-  }
+header {
+    padding: 30px;
+    height: 50px;
+    width: 100%;
+    display: flex;
+}
 
-  .navhead h1 {
+/* ナビゲーション */
+.navigation {
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+
+.navhead h1 {
     color: white;
-      text-align: left;
-      margin: 0;
-      padding: 0;
-      font-size: 25px;
-  }
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+}
 
-  a {
-      text-decoration: none;
-      color: white;
-      font-family: 'Yu Mincho Light', 'YuMincho', 'Yu Mincho', '游明朝体', sans-serif;
-  }
+a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Yu Mincho Light', 'YuMincho', 'Yu Mincho', '游明朝体', sans-serif;
+}
 
-  .nv{
+.nv {
     display: none;
     height: auto;
 }
-  .nav-list {
-      list-style: none;
-      display: flex;
-      margin-top: 5%;
-  }
-  .nav-list li {
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    margin-top: 5%;
+}
+
+.nav-list li {
     font-weight: bold;
     font-family: 'Yu Mincho Light', 'YuMincho', 'Yu Mincho', '游明朝体', sans-serif;
-      width: 100px;
-      margin: 0 0 0 20px;
-      font-size: 20px;
-      justify-content: flex-start;
-  }
+    width: 100px;
+    margin: 0 0 0 20px;
+    font-size: 20px;
+    justify-content: flex-start;
+}
 
-  .nav-img {
-      display: flex;
-      align-content: space-between;
-      height: 25px;
-      width: 25px;
-      position: absolute;
-      top: 50%;
-      right: 20%;
-  }
+.nav-img {
+    display: flex;
+    align-content: space-between;
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    top: 50%;
+    right: 20%;
+}
 
-  .nav-img img {
+.nav-img img {
     margin-left: 100%;
     filter: brightness(0) invert(1);
-  }
+}
 
 
 
 
-  /* ハンバーガーメニュー */
-  /* CSS Document */
-  /* ハンバーガーメニューのレスポンシブ */
-  
+/* ハンバーガーメニュー */
+/* CSS Document */
+/* ハンバーガーメニューのレスポンシブ */
 
-  /* PC時には非表示 */
-  .hamburger-button {
-      display: none;
-      /* display: flex; */
-      /* media query時にはflexでもどして */
-      justify-content: center;
-      align-items: center;
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      z-index: 1002;
-      background-color: #fff;
-      border: none;
-      cursor: pointer;
-      width: 40px;
-      height: 40px;
-      outline: none;
-  }
 
-  .hamburger-button svg {
-      height: 25px;
-      /* autoではなく同じ数字で */
-      width: 25px;
-      /* autoではなく同じ数字で */
-  }
+/* PC時には非表示 */
+.hamburger-button {
+    display: none;
+    /* display: flex; */
+    /* media query時にはflexでもどして */
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1002;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    outline: none;
+}
 
-  .hamburger-button path {
-      fill: #000;
-  }
+.hamburger-button svg {
+    height: 25px;
+    /* autoではなく同じ数字で */
+    width: 25px;
+    /* autoではなく同じ数字で */
+}
 
-  .hamburger-nav {
-      position: fixed;
-      width: 100%;
-      background-color: #fff;
-      z-index: 1001;
-      padding: 20px;
-      display: none;
-  }
+.hamburger-button path {
+    fill: #000;
+}
 
-  #hamburger-overlay {
-      position: fixed;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background-color: rgba(0, 0, 0, .5);
-      pointer-events: none;
-      opacity: 0;
-      z-index: 1000;
-  }
+.hamburger-nav {
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1001;
+    padding: 20px;
+    display: none;
+}
+
+#hamburger-overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .5);
+    pointer-events: none;
+    opacity: 0;
+    z-index: 1000;
+}
 
 /* kv */
-.kv{
-width: 100%;
-height: 100vh;
-position: relative;
-margin: 5% 0;
+.kv {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    margin: 5% 0;
 }
 
-.kv-text1{
-position: relative;
-width: 100%;
-height: auto;
+.kv-text1 {
+    position: relative;
+    width: 100%;
+    height: auto;
 }
-.kv-text1 h1{
+
+.kv-text1 h1 {
     width: 100px;
     height: 500px;
     writing-mode: vertical-rl;
@@ -162,34 +170,37 @@ height: auto;
     font-size: 35px;
     top: 30px;
     left: 53%;
-    }
-    .kv-text2{
+}
+
+.kv-text2 {
     position: relative;
     width: 100%;
     height: auto;
-    }
-    .kv-text2 h2{
-        color: white;
-        opacity: 0.7;
+}
+
+.kv-text2 h2 {
+    color: white;
+    opacity: 0.7;
     font-size: 23px;
     position: absolute;
     top: 480px;
     left: 30px;
 
-    }
-.kv-img1{
-    width: 650px;
-    height: 450px;
-object-fit: cover;
 }
 
-.kv-img2{
+.kv-img1 {
+    width: 650px;
+    height: 450px;
+    object-fit: cover;
+}
+
+.kv-img2 {
     width: 500px;
     height: 600px;
-object-fit: cover;
-position: absolute;
-top: 35px;
-right: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 35px;
+    right: 0;
 }
 
 /* メインコンテンツ */
@@ -198,152 +209,180 @@ main {
     height: 100%;
     position: relative;
 }
-.mainwrap{
-  position: relative;
-  width: 100%;
-height: 1300px;
+
+.mainwrap {
+    position: relative;
+    width: 100%;
+    height: 1300px;
 }
-span{
-font-size: 25px;
+
+span {
+    font-size: 25px;
 }
+
 .content-img1 {
-  width: 550px;
-  height: 550px;
+    width: 500px;
+    height: 500px;
     position: absolute;
     top: 150px;
     right: 300px;
 }
-.toptext1{
+
+.toptext1 {
     width: 700px;
     height: 600px;
-position: absolute;
-top: 100px;
-left: 200px;
+    position: absolute;
+    top: 100px;
+    left: 200px;
 }
-.toptext1 h1{
-color: white;
-position: absolute;
-font-size: 35px;
-top: 40px;
-left: 100px;
+
+.toptext1 h1 {
+    color: white;
+    position: absolute;
+    font-size: 35px;
+    top: 40px;
+    left: 100px;
 }
-.toptext1 p{
+
+.toptext1 p {
     font-size: 20px;
-color: white;
-position: absolute;
-top: 200px;
-left: 100px;
+    color: white;
+    position: absolute;
+    top: 200px;
+    left: 100px;
 }
-.toptext2{
+
+.toptext2 {
     width: 100%;
     height: 500px;
-position: absolute;
-bottom: 50px;
+    position: absolute;
+    bottom: 50px;
 }
+
 .content-img2 {
-  width: 550px;
-  height: 550px;
+    width: 500px;
+    height: 500px;
     position: absolute;
     top: 650px;
     left: 150px;
 }
-.toptext2 h1{
+
+.toptext2 h1 {
     color: white;
     position: absolute;
     font-size: 35px;
-    bottom:300px ;
-    right:450px;
+    bottom: 300px;
+    right: 450px;
 }
+
 .toptext2 p {
-  color: #fff;
+    color: #fff;
     font-size: 20px;
     position: absolute;
     bottom: 100px;
     right: 200px;
 }
 
-  /* hoverコンテンツ */
-  .hover-wrapp {
-    width: 100%;
-    height: 1300px;
-    margin:300px 100px;
-      position: relative;
-  }
-  .hover1 {
-      position: absolute;
-      top: 28%;
-      left: 30%;
-  }
-  .hover2 {
-      position: absolute;
-      top: 55%;
-      left: 30%;
-  }
-  .hover3 {
-      position: absolute;
-      top: 80%;
-      left: 30%;
-  }
-  .hover4 {
-width: 400px;
-height: 400px;
-position: absolute;
-top: 110%;
-left: 30%;
-}
-
-  /* スライド */ 
- .slide-wrap{
-    height: 80%;
-    width: 100%;
-    margin:10% 5%;
+/* hoverコンテンツ */
+.hover-content{
+width: 100%;
+height: 1500px;
+margin: 20% 10%;
 position: relative;
+
+}
+.hover-wrapp {
+    width: 100%;
+    height: 1500px;
+    margin: 50px ;
+}
+/* .hover-wrapp img{
+border-radius: 50%;
+} */
+
+.hover1 {
+    position: absolute;
+    top: 28%;
+    left: 20%;
 }
 
-  .slider-1 {
-      width: 80%;
-      height: 80%;
-      /* position: absolute;
+.hover2 {
+    position: absolute;
+    top: 55%;
+    right: 30%;
+}
+
+.hover3 {
+    position: absolute;
+    top: 83%;
+    left: 20%;
+}
+
+.hover4 {
+    position: absolute;
+    bottom: 15%;
+    left: 8%;
+}
+
+/* スライド */
+/* .slide-content{
+width: 100%;
+height:1000px;
+margin: 10% 5%;
+position: relative;
+} */
+
+/* .slide-wrap {
+    height: 1000px;
+    width: 100%;
+    margin: 10% 5%;
+    position: absolute;
+top: 300px;
+}
+
+.slider-1 {
+    text-align: center;
+    width: 80%;
+    height: 80%;
+    /* position: absolute;
       top: 0; */
-      
-  }
+/* } */
 
- .slider-1 img {
-    height: 500px;
+/* .slider-1 img {
+    height: 80%;
     width: auto;
-       margin: 40% 2%;
-       width: 80%;
-      height: 80%;
-  } 
+    width: 80%;
+    height: 80%;
+} */ 
 
-  /* フッター */
-  .footer-wrrapper {
-      width: 100%;
-      height: 500px;
-      text-align: center;
-      border-top: 1px solid white;
-      margin-top: 20%;
-      display: flex;
-      display: grid;
-      margin: 0;
-      padding: 0 5%;
-      grid-template-columns: 1fr 1fr 1fr;
-  }
+/* フッター */
+.footer-wrrapper {
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    border-top: 1px solid white;
+    margin-top: 20%;
+    display: flex;
+    display: grid;
+    margin: 0;
+    padding: 0 5%;
+    grid-template-columns: 1fr 1fr 1fr;
+}
 
-  .footer {
-      list-style: none;
-      display: block;
-      line-height: 30px;
-      color: white;
-      font-size: 20px;
-      text-align: left;
-  }
+.footer {
+    list-style: none;
+    display: block;
+    line-height: 30px;
+    color: white;
+    font-size: 20px;
+    text-align: left;
+}
 
-  .footer.social-list li {
-      line-height: 40px;
-  }
+.footer.social-list li {
+    line-height: 40px;
+}
 
-  .footer .fa {
-      font-size: 25px;
-      color: white;
-  }
+.footer .fa {
+    font-size: 25px;
+    color: white;
+}

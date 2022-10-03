@@ -78,6 +78,16 @@ particlesJS("particles-js", {
         $(this).next(".nv").slideToggle(1000);
         $(this).toggleClass("on");
     })
+// ナビリスト
+    $(".nav-list li").on("mouseover",function(){
+    $(this).css("opacity",0.7)
+    $(".nav-list li").on("mouseleave",function(){
+        $(this).css("opacity",1)
+        })
+    })
+// ナビアイコン
+$(".nav-img").on
+    
 
     // ハンバーガーメニュー
     $(function () {
@@ -233,11 +243,17 @@ particlesJS("particles-js", {
         )
     });
 
+$(".hover1").on("mousehover",function(){
+$(".hover-img1").slideToggle(1000);
+})
+
+
     // スライド
     $('.slider-1').slick({
         infinite: true,
         slidesToShow: 3,
-        slidesToScroll: 3
+        slidesToScroll: 3,
+        
     });
 
 });
