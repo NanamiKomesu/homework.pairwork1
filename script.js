@@ -171,8 +171,19 @@ particlesJS("particles-js", {
         }
     });
 
+    // メイン
+    AOS.init({
+        offset: 200,
+        delay: 500,
+        duration: 600,
+        easing: 'ease-out',
+        anchorPlacement: 'bottom-center',
+        once: false
+    });
+
 
     // hoverコンテンツ
+
     $('.hover-fade1').each(function () {
         var off_img = $(this).find('img').attr('src').replace('_off', '_on');
         var on_img = $('<img src="' + off_img + '" alt="" style="position:absolute; opacity:0;" />');
@@ -228,5 +239,5 @@ particlesJS("particles-js", {
         slidesToShow: 3,
         slidesToScroll: 3
     });
-    
+
 });

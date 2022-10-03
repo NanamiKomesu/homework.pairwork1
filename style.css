@@ -171,7 +171,7 @@ height: auto;
     .kv-text2 h2{
         color: white;
         opacity: 0.7;
-    font-size: 20px;
+    font-size: 23px;
     position: absolute;
     top: 480px;
     left: 30px;
@@ -188,7 +188,7 @@ object-fit: cover;
     height: 600px;
 object-fit: cover;
 position: absolute;
-top: 30px;
+top: 35px;
 right: 0;
 }
 
@@ -196,20 +196,21 @@ right: 0;
 main {
     width: 100%;
     height: 100%;
-    margin: 20% 0;
     position: relative;
 }
-
 .mainwrap{
   position: relative;
   width: 100%;
 height: 1300px;
 }
+span{
+font-size: 25px;
+}
 .content-img1 {
   width: 550px;
   height: 550px;
     position: absolute;
-    top: 100px;
+    top: 150px;
     right: 300px;
 }
 .toptext1{
@@ -233,25 +234,31 @@ position: absolute;
 top: 200px;
 left: 100px;
 }
+.toptext2{
+    width: 100%;
+    height: 500px;
+position: absolute;
+bottom: 50px;
+}
 .content-img2 {
   width: 550px;
   height: 550px;
     position: absolute;
-    top: 600px;
+    top: 650px;
     left: 150px;
 }
 .toptext2 h1{
     color: white;
     position: absolute;
     font-size: 35px;
-    top: 800px;
+    bottom:300px ;
     right:450px;
 }
 .toptext2 p {
   color: #fff;
     font-size: 20px;
     position: absolute;
-    bottom: 150px;
+    bottom: 100px;
     right: 200px;
 }
 
@@ -259,30 +266,30 @@ left: 100px;
   .hover-wrapp {
     width: 100%;
     height: 1300px;
-    margin-bottom:50% ;
+    margin:300px 100px;
       position: relative;
   }
   .hover1 {
       position: absolute;
       top: 28%;
-      left: 5%;
+      left: 30%;
   }
   .hover2 {
       position: absolute;
-      top: 43%;
-      left: 48%;
+      top: 55%;
+      left: 30%;
   }
   .hover3 {
       position: absolute;
       top: 80%;
-      left: 17%;
+      left: 30%;
   }
-  .hover4{
+  .hover4 {
 width: 400px;
-height: 500px;
+height: 400px;
 position: absolute;
-top: 120%;
-left: 50%;
+top: 110%;
+left: 30%;
 }
 
   /* スライド */ 
