@@ -172,7 +172,7 @@ particlesJS("particles-js", {
     });
 
 
-    // kv
+    // hoverコンテンツ
     $('.hover-fade1').each(function () {
         var off_img = $(this).find('img').attr('src').replace('_off', '_on');
         var on_img = $('<img src="' + off_img + '" alt="" style="position:absolute; opacity:0;" />');
@@ -222,14 +222,11 @@ particlesJS("particles-js", {
         )
     });
 
-
-
-
     // スライド
     $('.slider-1').slick({
         infinite: true,
         slidesToShow: 3,
         slidesToScroll: 3
     });
-
+    
 });
