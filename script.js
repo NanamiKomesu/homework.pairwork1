@@ -1,76 +1,77 @@
 $(function () {
-    
-// 背景アニメーション
-particlesJS("particles-js", {
-    particles: {
-      number: {
-        value: 50, //この数値を変更するとホタルの数が増減できる
-        density: {
-          enable: true,
-          value_area: 1602.3971861905397
-        }
-      },
-      color: {
-        value: "#ffc9d2" //色
-      },
-      shape: {
-        type: "circle", //形状はcircleを指定
-        stroke: {
-          width: 0
-        }
-      },
-      opacity: {
-        value: 1,
-        random: true, //透過をランダムに
-        anim: {
-          enable: false,
-          speed: 1.10115236356258881,
-          opacity_min: 0,
-          sync: false
-        }
-      },
-      size: {
-        value: 4.005992965476349,
-        random: true, //サイズをランダムに
-        anim: {
-          enable: true,
-          speed: 24.345709068776642,
-          size_min: 0.1,
-          sync: false
-        }
-      },
-      line_linked: {
-        enable: false
-      },
-      move: {
-        enable: true,
-        speed: 2, //この数値を小さくするとゆっくりな動きになる
-        direction: "none", //方向指定なし
-        random: true, //動きはランダムに
-        straight: false, //動きをとどめない
-        out_mode: "out", //画面の外に出るように描写
-        bounce: false, //跳ね返りなし
-        attract: {
-          enable: false,
-          rotateX: 600,
-          rotateY: 600
-        }
-      }
-    },
-    interactivity: {
-      detect_on: "canvas",
-      events: {
-        onhover: {
-          enable: false
+
+
+    // 背景アニメーション
+    particlesJS("particles-js", {
+        particles: {
+            number: {
+                value: 50, //この数値を変更するとホタルの数が増減できる
+                density: {
+                    enable: true,
+                    value_area: 1602.3971861905397
+                }
+            },
+            color: {
+                value: "#ffc9d2" //色
+            },
+            shape: {
+                type: "circle", //形状はcircleを指定
+                stroke: {
+                    width: 0
+                }
+            },
+            opacity: {
+                value: 1,
+                random: true, //透過をランダムに
+                anim: {
+                    enable: false,
+                    speed: 1.10115236356258881,
+                    opacity_min: 0,
+                    sync: false
+                }
+            },
+            size: {
+                value: 4.005992965476349,
+                random: true, //サイズをランダムに
+                anim: {
+                    enable: true,
+                    speed: 24.345709068776642,
+                    size_min: 0.1,
+                    sync: false
+                }
+            },
+            line_linked: {
+                enable: false
+            },
+            move: {
+                enable: true,
+                speed: 2, //この数値を小さくするとゆっくりな動きになる
+                direction: "none", //方向指定なし
+                random: true, //動きはランダムに
+                straight: false, //動きをとどめない
+                out_mode: "out", //画面の外に出るように描写
+                bounce: false, //跳ね返りなし
+                attract: {
+                    enable: false,
+                    rotateX: 600,
+                    rotateY: 600
+                }
+            }
         },
-        onclick: {
-          enable: false
+        interactivity: {
+            detect_on: "canvas",
+            events: {
+                onhover: {
+                    enable: false
+                },
+                onclick: {
+                    enable: false
+                },
+                resize: true
+            }
         },
-        resize: true
-      }
-    },
-    retina_detect: true
-  });
+        retina_detect: true
+    });
 
 
     // ヘッダーナビゲーション
@@ -78,16 +79,16 @@ particlesJS("particles-js", {
         $(this).next(".nv").slideToggle(1000);
         $(this).toggleClass("on");
     })
-// ナビリスト
-    $(".nav-list li").on("mouseover",function(){
-    $(this).css("opacity",0.7)
-    $(".nav-list li").on("mouseleave",function(){
-        $(this).css("opacity",1)
+    // ナビリスト
+    $(".nav-list li").on("mouseover", function () {
+        $(this).css("opacity", 0.7)
+        $(".nav-list li").on("mouseleave", function () {
+            $(this).css("opacity", 1)
         })
     })
-// ナビアイコン
-$(".nav-img").on
-    
+    // ナビアイコン
+
+
 
     // ハンバーガーメニュー
     $(function () {
@@ -194,7 +195,8 @@ $(".nav-img").on
 
     // hoverコンテンツ
 
-    $('.hover-fade1').each(function () {
+
+    $('.hover').each(function () {
         var off_img = $(this).find('img').attr('src').replace('_off', '_on');
         var on_img = $('<img src="' + off_img + '" alt="" style="position:absolute; opacity:0;" />');
         $(this).find('img').before(on_img);
@@ -204,56 +206,34 @@ $(".nav-img").on
             $(this).stop().animate({ 'opacity': '0' }, 300);
         }
         )
+        $(on_img).css({
+            "width": "300px", "height": "300px","border-radius":"5% 5% 0 0"
+        });
     });
 
 
-    $('.hover-fade2').each(function () {
-        var off_img = $(this).find('img').attr('src').replace('_off', '_on');
-        var on_img = $('<img src="' + off_img + '" alt="" style="position:absolute; opacity:0;" />');
-        $(this).find('img').before(on_img);
-        $(this).find('img').hover(function () {
-            $(this).stop().animate({ 'opacity': '1' }, 400);
-        }, function () {
-            $(this).stop().animate({ 'opacity': '0' }, 300);
-        }
-        )
+    $(".view-link p").mouseover(function(){
+    $(this).css({
+    "margin-left":"30px"
+    })
+    $(this).mouseleave(function(){
+        $(this).css({
+            "margin-left":"0"
+        })
+    })
     });
 
-    $('.hover-fade3').each(function () {
-        var off_img = $(this).find('img').attr('src').replace('_off', '_on');
-        var on_img = $('<img src="' + off_img + '" alt="" style="position:absolute; opacity:0;" />');
-        $(this).find('img').before(on_img);
-        $(this).find('img').hover(function () {
-            $(this).stop().animate({ 'opacity': '1' }, 400);
-        }, function () {
-            $(this).stop().animate({ 'opacity': '0' }, 300);
-        }
-        )
-    });
 
-    $('.hover-fade4').each(function () {
-        var off_img = $(this).find('img').attr('src').replace('_off', '_on');
-        var on_img = $('<img src="' + off_img + '" alt="" style="position:absolute; opacity:0;" />');
-        $(this).find('img').before(on_img);
-        $(this).find('img').hover(function () {
-            $(this).stop().animate({ 'opacity': '1' }, 400);
-        }, function () {
-            $(this).stop().animate({ 'opacity': '0' }, 300);
-        }
-        )
-    });
 
-$(".hover1").on("mousehover",function(){
-$(".hover-img1").slideToggle(1000);
+
+    // フッター
+    $(".footer-wrrapper li").on("mouseover", function () {
+        $(this).css("opacity", 0.7)
+        $(this).on("mouseleave", function () {
+            $(this).css("opacity", 1)
+        })
+    })
 })
+   
+    
 
-
-    // スライド
-    $('.slider-1').slick({
-        infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        
-    });
-
-});

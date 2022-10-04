@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" href="http://kenwheeler.github.io/slick/slick/slick-theme.css">
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" /> -->
+    <!-- <link rel="stylesheet" href="http://kenwheeler.github.io/slick/slick/slick-theme.css"> -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3a8222f7d7.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./style.css">
     <title>Document</title>
@@ -30,10 +31,10 @@
                     <li><a href="#">CONTACT</a></li>
                 </ul>
             </div>
-            <div class="nav-img">
-             <img img src="./magnifying-glass-solid.svg" alt=""></img>
-              <img img src="./cart-shopping-solid.svg" alt=""></img>
-                <img img src="./user-solid.svg" alt=""></img>
+            <div class="nav-icon"> 
+                <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href=""><i class="fa-solid fa-user"><a href="https://serendouce-crafts.com/account/login"></a></i></a> 
             </div>
         </nav>
 
@@ -52,10 +53,11 @@
     </header>
 
     <!-- kv -->
-    <div class="kv">
-        <div class="kv-text1" data-aos="fade-down" data-aos-deley="6000" data-aos-duration="2000" data-aos-once="false">
-            <h1> 金城有美子 <br> -Yumiko Kinjyo- <br> 【沖縄／やちむん作家】</h1>
-        </div>
+    <div class="kv-text1" data-aos="fade-down" data-aos-deley="6000" data-aos-duration="2000" data-aos-once="false">
+        <a href="https://serendouce-crafts.com/collections/kinjoyumiko"><img class="kv-img1" data-aos="fade-right"
+                data-aos-duration="1000" data-aos-anchor-placement="top-center" src="./kv-img.png" alt=""></a>
+
+        <h1> 金城有美子 <br> -Yumiko Kinjyo- <br> 【沖縄／やちむん作家】</h1>
         <div class="kv-text2">
             <h2 data-aos="fade-up" data-aos-deley="6000" data-aos-anchor-placement="center-bottom"
                 data-aos-duration="2000">
@@ -64,14 +66,13 @@
                 沖縄のおおらかな雰囲気を醸し出します。<br>
                 陶板アートを制作するなど、芸術分野でも活躍する</h2>
         </div>
-        <a href="https://serendouce-crafts.com/collections/kinjoyumiko"><img class="kv-img1" data-aos="fade-right"
-                data-aos-duration="1000" data-aos-anchor-placement="top-center" src="./kv-img.png" alt=""></a>
-        <a href="https://serendouce-crafts.com/collections/kinjoyumiko"> <img class="kv-img2" data-aos="fade-left"
-                data-aos-duration="1000" data-aos-anchor-placement="top-center"
-                src="https://image.news.livedoor.com/newsimage/stf/8/a/8a95c_1202_89edab59_f3d882db-sq.jpg" alt=""></a>
-
+        <div class="kvimg2">
+            <a href="https://serendouce-crafts.com/collections/kinjoyumiko"> <img class="kv-img2" data-aos="fade-left"
+                    data-aos-duration="1000" data-aos-anchor-placement="top-center"
+                    src="https://image.news.livedoor.com/newsimage/stf/8/a/8a95c_1202_89edab59_f3d882db-sq.jpg" alt="">
+            </a>
+        </div>
     </div>
-
 
 
     <!-- メインコンテンツ -->
@@ -109,69 +110,99 @@
     </main>
 
     <!-- hoverコンテンツ -->
-    <div class="hover-content">
-        <div class="hover-wrapp">
-            <div class="hover1">
-                <a href="https://serendouce-crafts.com/products/kinjoyumiko-rimplate-17cm" class="hover-fade1">
-                    <img class="hover-img1" src="./plate1img_off.png" alt="">
-                </a>
-            </div>
 
-            <div class="hover2">
-                <a href="https://serendouce-crafts.com/products/kinjoyumiko-coralbluemug" class="hover-fade2">
-                    <img class="hover-img2" src="./plate2img_off.png" alt="">
-                </a>
-            </div>
-
-            <div class="hover3">
-                <a href="https://serendouce-crafts.com/products/kinjoyumiko-bowl" class="hover-fade3">
-                    <img class="hover-img3" src="./plate3img_off.png" alt="">
-                </a>
-            </div>
-
-            <div class="hover4">
-                <a href="https://serendouce-crafts.com/products/kinjoyumiko-coralbluewarpedbowl-large"
-                    class="hover-fade4">
-                    <img class="hover-img4" src="./plate4img_off.png" alt="">
-                </a>
-            </div>
+    <div class="hover-wrapp">
+        <div class="hover hover1">
+            <a href="https://serendouce-crafts.com/products/kinjoyumiko-rimplate-17cm" class="hover-fade1">
+                <img class="hover-img" src="./plate1img_off.png" alt="">
+                <li> サンゴブルーリム皿　<br>¥3,850 </li>
+            </a>
         </div>
+
+        <div class="hover hover2">
+            <a href="https://serendouce-crafts.com/products/kinjoyumiko-coralbluemug" class="hover-fade2">
+                <img class="hover-img" src="./plate2img_off.png" alt="">
+                <li> サンゴブルーマグカップ　<br>¥3,850 </li>
+            </a>
+        </div>
+
+        <div class="hover hover3">
+            <a href="https://serendouce-crafts.com/products/kinjoyumiko-bowl" class="hover-fade3">
+                <img class="hover-img" src="./plate3img_off.png" alt="">
+                <li> シリアル鉢<br>¥6,600 </li>
+            </a>
+        </div>
+
+        <div class="hover hover4">
+            <a href="https://serendouce-crafts.com/products/kinjoyumiko-coralbluewarpedbowl-large" class="hover-fade4">
+                <img class="hover-img" src="./plate4img_off.png" alt="">
+                <li>サンゴブルー反り鉢(大)<br>¥18,700 </li>
+            </a>
+        </div>
+
+        <div class="hover hover5">
+            <a href="https://serendouce-crafts.com/products/kinjoyumiko-coralbluewarpedbowl-large" class="hover-fade5">
+                <img class="hover-img" src="./plate5img_off.png" alt="">
+                <li>レッドプランツ 平皿<br>¥3,300 </li>
+            </a>
+        </div>
+
+        <div class="hover hover6">
+            <a href="https://serendouce-crafts.com/products/kinjoyumiko-coralbluewarpedbowl-large" class="hover-fade6">
+                <img class="hover-img" src="./plate6img_off.png" alt="">
+                <li>サンゴブルー広口マグカップ<br>¥4,950 </li>
+            </a>
+        </div>
+
+        <div class="hover hover7">
+            <a href="https://serendouce-crafts.com/products/kinjoyumiko-coralbluewarpedbowl-large" class="hover-fade7">
+                <img class="hover-img" src="./plate7img_off.png" alt="">
+                <li>黒シマ渦リム皿<br>¥3,850 </li>
+            </a>
+        </div>
+
+        <div class="hover hover8">
+            <a href="https://serendouce-crafts.com/products/kinjoyumiko-coralbluewarpedbowl-large" class="hover-fade8">
+                <img class="hover-img" src="./plate8img_off.png" alt="">
+                <li>サンゴブルーシリアル鉢<br>¥7,260 </li>
+            </a>
+        </div>
+
+        <a class="view-link" href="">
+            <p>more view </p>
+        </a>
     </div>
 
-    <!-- スライド
-    <div class="slide-content">
-    <div class="slide-wrap">
-        <ul class="slider-1" id="js-slider-1">
-            <li><img src="https://cdn.shopify.com/s/files/1/0624/3804/7990/products/acb0fc9fe1a027470913852816792b6a.jpg?v=1646296902&width=713"
-                    alt=""></li>
-            <li><img src="https://cdn.shopify.com/s/files/1/0624/3804/7990/products/fa95ff2774c6b82f7d4a8b91f9895c01.jpg?v=1646297405&width=713"
-                    alt=""></li>
-            <li><img src="https://cdn.shopify.com/s/files/1/0624/3804/7990/products/5c96d28493d4da6812d1453d74698c12.png?v=1646296942&width=493"
-                    alt=""></li>
-            <li><img src="https://cdn.shopify.com/s/files/1/0624/3804/7990/products/acb0fc9fe1a027470913852816792b6a.jpg?v=1646296902&width=713"
-                    alt=""></li>
-            <li><img src="https://cdn.shopify.com/s/files/1/0624/3804/7990/products/fa95ff2774c6b82f7d4a8b91f9895c01.jpg?v=1646297405&width=713"
-                    alt=""></li>
-            <li><img src="https://cdn.shopify.com/s/files/1/0624/3804/7990/products/5c96d28493d4da6812d1453d74698c12.png?v=1646296942&width=493"
-                    alt=""></li>
-        </ul>
-    </div>
-</div> -->
 
-
-<!-- フッター -->
+    <!-- フッター -->
     <footer class="footer-wrrapper">
         <ul class="footer footer-list1">
-            <li>ご利用ガイド</li>
-            <li>利用規約</li>
-            <li>プライバシーポリシー</li>
-            <li>お問い合わせ</li>
+            <a href="">
+                <li>ご利用ガイド</li>
+            </a>
+            <a href="">
+                <li>利用規約</li>
+            </a>
+            <a href="">
+                <li>プライバシーポリシー</li>
+            </a>
+            <a href="">
+                <li>お問い合わせ</li>
+            </a>
         </ul>
         <ul class="footer footer-list2">
-            <li>Home</li>
-            <li>News</li>
-            <li>About Us</li>
-            <li>Contact</li>
+            <a href="">
+                <li>Home</li>
+            </a>
+            <a href="">
+                <li>News</li>
+            </a>
+            <a href="">
+                <li>About Us</li>
+            </a>
+            <a href="">
+                <li>Contact</li>
+            </a>
         </ul>
 
         <ul class="footer social-list">
@@ -179,14 +210,17 @@
             <li><a href="https://www.facebook.com/hogehoge"><i class="fa fa-facebook"></i></a></li>
             <li><a href="https://www.instagram.com/hogehoge"><i class="fa fa-instagram"></i></a></li>
         </ul>
-    </footer>
 
-    
+    </footer>
+    <div class="copyright">
+        <p>&copy; 2022 NanamiKomesu </p>
+    </div>
+
     <script defer src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script defer type="text/javascript"
-     script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script  src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script defer type="text/javascript" script
+        src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script defer src="./script.js"></script>
 
     <!-- <script>
